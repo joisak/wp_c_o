@@ -46,7 +46,7 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-// @include foundation-float-classes;
+@include foundation-float-classes;
 @include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
@@ -55,9 +55,13 @@
 @include motion-ui-animations;
 
 @import 'settings';
+
+@import 'patterns/margins';
+
 @import 'components/about',
         'components/contact',
         'components/events',
         'components/gallery',
         'components/hero',
-        'components/menu';
+        'components/menu',
+        'components/header-menu';

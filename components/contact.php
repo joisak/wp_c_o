@@ -6,14 +6,14 @@
 
 <div class="contact">
   <div class="row">
+    <div class="column small-12 text-center tp-60 bp-60 ">Kontakt</div>
     <div class="small-12 medium-6 columns">
       <div class="form">
-
           <form  action="mailer.php"  method="post" v-bind:class="{fadeOut : success}">
-            <input type="text" name="name" v-model="form_fields.name" id="form_name" value="name" v-bind:class="{ 'warning' : attemptSubmit && missingName }" required>
-            <input type="email" name="email"  v-model="form_fields.email" id="form_email" value="email" v-bind:class="{ 'warning' : attemptSubmit && notValidEmail }" required>
-            <input type="tel" name="phone" v-model="form_fields.phone" id="form_phone" value="phone" v-bind:class="{ 'warning' : attemptSubmit && wrongNumber }" required>
-            <textarea name="message" id="form_message" v-model="form_fields.message" rows="8" cols="80" v-bind:class="{ 'warning' : attemptSubmit && missingMessage }"></textarea>
+            <input placeholder="Namn" type="text" name="name" v-model="form_fields.name" id="form_name" value="name" v-bind:class="{ 'warning' : attemptSubmit && missingName }" required>
+            <input placeholder="E-mail" type="email" name="email"  v-model="form_fields.email" id="form_email" value="email" v-bind:class="{ 'warning' : attemptSubmit && notValidEmail }" required>
+            <input placeholder="Telefonnummer" type="tel" name="phone" v-model="form_fields.phone" id="form_phone" value="phone" v-bind:class="{ 'warning' : attemptSubmit && wrongNumber }" required>
+            <textarea placeholder="Ditt meddelande" name="message" id="form_message" v-model="form_fields.message" rows="8" cols="80" v-bind:class="{ 'warning' : attemptSubmit && missingMessage }"></textarea>
             <div class="message" v-if="success">
                 <p>Vi hör av oss så fort vi kan!</p>
             </div>
@@ -24,7 +24,6 @@
             <button v-on:click="validateForm()" type="button" name="button">Skicka</button>
           </form>
       </div>
-
     </div>
     <div class="small-12 medium-6 columns">
       <div id="map"></div>

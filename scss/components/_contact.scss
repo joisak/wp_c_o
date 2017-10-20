@@ -1,5 +1,8 @@
 .contact {
   border: 1px solid red;
+  .warning {
+    border: red solid 1px;
+  }
   #map {
     height: 400px;
     width: 100%;

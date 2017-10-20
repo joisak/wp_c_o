@@ -2,6 +2,10 @@
   a {
     img {
       width: 25%;
+      transition: width .4s ease-out;
+      @include breakpoint(medium down) {
+        width: 50%;
+      }
     }
   }
 }
