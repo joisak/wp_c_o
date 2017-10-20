@@ -1,5 +1,9 @@
 <?php
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-logo' );
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+add_filter('upload_mimes', 'cc_mime_types');
+
 
 function my_acf_google_map_api( $api ){
 
@@ -9,4 +13,7 @@ function my_acf_google_map_api( $api ){
 
 }
 
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}

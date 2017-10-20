@@ -54,9 +54,22 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// Fonts
+@font-face {
+  font-family: 'Moon-flower';
+  src: url('../fonts/Moon_flower.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Moon_flower.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Moon_flower.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Moon_flower.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+// Patterns and Components
 @import 'settings';
 
-@import 'patterns/margins';
+@import 'patterns/margins',
+        'patterns/colors',
+        'patterns/typography';
 
 @import 'components/about',
         'components/contact',
@@ -64,4 +77,4 @@
         'components/gallery',
         'components/hero',
         'components/menu',
-        'components/header-menu';
+        'components/header';

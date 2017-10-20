@@ -1,0 +1,47 @@
+body {
+  background-image: url('../img/bg.jpg');
+  background-size: contain;
+  background-repeat:repeat;
+  background-attachment: fixed;
+  @include breakpoint (medium down) {
+    background-size:cover;
+  }
+}
+.header {
+  background-color: rgba(0,0,0, .5);
+  width: 100%;
+  .header-logo {
+    padding:rem-calc(20) rem-calc(20);
+  }
+  .header-menu {
+    position: relative;
+    transform: translateY(5%);
+    font-family: $header-font;
+    font-size: rem-calc(32);
+    font-weight: 600;
+    text-align: right;
+    padding: rem-calc(20) rem-calc(20);
+    @include breakpoint(medium down) {
+      font-size: rem-calc(28);
+    }
+    @include breakpoint(small down) {
+      text-align: center;
+      font-size: rem-calc(24);
+      padding-top: 0;
+    }
+    ul {
+      margin: auto;
+      li {
+        display: inline;
+        padding-left: rem-calc(20);
+        @include breakpoint(small down) {
+          padding-left:rem-calc(10);
+          padding-right: rem-calc(10);
+        }
+        a {
+          color: $custom-white;
+        }
+      }
+    }
+  }
+}

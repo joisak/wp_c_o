@@ -1,4 +1,16 @@
 .course-menu {
-  background-color: #bad555;
-  border: 1px solid green;
+  background-color: $custom-cream-white;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  .menu-item {
+
+  }
+  .menu-dots {
+    background: url(../img/dots.svg);
+    background-repeat: repeat-x;
+    background-position: 1px;
+    background-size: 8px 2px;
+    position: relative;
+    bottom: -5px;
+  }
 }

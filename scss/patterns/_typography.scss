@@ -1,0 +1,12 @@
+h1, h2, h3, h4 {
+  color:$custom-black;
+  font-family: $header-font;
+  font-weight: 600;
+  letter-spacing: rem-calc(1);
+  margin-bottom: 0;
+}
+
+p {
+  font-family: $content-text;
+  margin-bottom: 0;
+}

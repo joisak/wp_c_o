@@ -4,7 +4,7 @@
   setup_postdata( $post );
   $attachment_id = get_post_thumbnail_id( $post->ID );
 ?>
-  <?php get_template_part( 'components/header_menu'); ?>
+  <?php get_template_part( 'components/header'); ?>
   <?php get_template_part( 'components/hero'); ?>
   <?php get_template_part( 'components/menu'); ?>
   <?php get_template_part( 'components/gallery'); ?>
