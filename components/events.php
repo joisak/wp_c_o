@@ -1,6 +1,5 @@
 <div class="events">
   <div class="row">
-    <div class="small-12 medium-6 columns">6 columns</div>
-    <div class="small-12 medium-6 columns">6 columns</div>
+    <div class="column small-12 text-center tp-60 bp-40"><h2>Events</h2></div>
   </div>
 </div>

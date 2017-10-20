@@ -1,4 +1,32 @@
 .about {
-  background-color: pink;
-  border: 1px solid red;
+  background-color: $custom-cream-white;
+  padding-bottom: rem-calc(60);
+  .first-img {
+    max-width: 125%;
+    direction: rtl;
+    @include breakpoint(medium down) {
+      max-width: 100%;
+    }
+    @include breakpoint (small down) {
+      padding: rem-calc(10);
+    }
+  }
+  .about-text {
+    @include breakpoint(small down) {
+      text-align: center;
+      padding: rem-calc(30) !important;
+      margin: auto;
+    }
+  }
+  .second-img {
+    max-width: 125%;
+    margin-left: -25%;
+    @include breakpoint(medium down) {
+      max-width: 100%;
+      margin: 0;
+    }
+    @include breakpoint (small down) {
+      padding: rem-calc(10);
+    }
+  }
 }

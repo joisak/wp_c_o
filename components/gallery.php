@@ -1,7 +1,7 @@
 <div class="gallery">
-  <div class="row small-12 column">Gallery</div>
+  <div class="small-12 gallery-title text-center column tp-60 bp-40"><h2>Gallery</h2></div>
   <div class="row">
-    <div class="small-12">
+    <div class="column p-20 small-12">
       <div id="instafeed">
       </div>
     </div>

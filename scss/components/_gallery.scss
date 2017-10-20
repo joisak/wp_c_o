@@ -1,4 +1,8 @@
 .gallery {
+  background-color: #fff;
+  .gallery-title {
+    background-color: $custom-cream-white;;
+  }
   a {
     img {
       width: 25%;
