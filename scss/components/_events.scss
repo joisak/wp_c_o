@@ -1,3 +1,25 @@
 .events {
   background-color: $custom-cream-white;
+  .month {
+    margin-left: rem-calc(-15);
+    font-size: rem-calc(24);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .event-name,.event-date {
+    padding-left: 0;
+    padding-right: 0;
+    @include breakpoint(small down) {
+      font-size: rem-calc(14);
+    }
+  }
+  .event-line {
+    border-bottom: 2px solid $light-brown;
+    padding-bottom: rem-calc(2);
+  }
+  .menu-item {
+    &:last-child {
+      display: none;
+    }
+  }
 }

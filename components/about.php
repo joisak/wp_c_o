@@ -12,7 +12,7 @@
     <div id="about" class="small-12 text-center tp-60 bp-60"><h2>Styrsö</h2></div>
   </div>
 
-  <div class="small-12 medium-10 medium-offset-1">
+  <div class="small-12">
 
 
     <div class="row align-middle">

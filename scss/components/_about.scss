@@ -1,8 +1,7 @@
 .about {
   background-color: $custom-cream-white;
-  padding-bottom: rem-calc(60);
   .first-img {
-    width: 140%;
+    width: 115%;
     max-width: rem-calc(1200);
     direction: rtl;
     padding: 0;
@@ -14,9 +13,9 @@
     }
   }
   .second-img {
-    width: 140%;
+    width: 115%;
     max-width: rem-calc(1200);
-    margin-left: -40%;
+    margin-left: -15%;
     padding: 0;
     @include breakpoint(medium down) {
       max-width: 100%;

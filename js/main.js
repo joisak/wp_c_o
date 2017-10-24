@@ -33,7 +33,8 @@ var form = new Vue({
     },
     error: false,
     success: false,
-    attemptSubmit: false
+    attemptSubmit: false,
+    loading: false,
   },
   computed: {
     missingName: function() {
@@ -78,6 +79,7 @@ var form = new Vue({
         t.error = false;
 
       $.ajax({type: "POST", dataType: "json", url: url, data: formData, success: function(response) {}}).done(function(res, req) {
+        t.loading = false;
         t.success = true;
       }).fail(function(data) {
         console.log('wrong.....');
@@ -90,6 +92,7 @@ var form = new Vue({
       if (this.missingName || this.wrongNumber || this.missingMessage || this.notValidEmail)
         event.preventDefault();
       if (!this.missingName && !this.wrongNumber && !this.missingMessage && !this.notValidEmail) {
+        t.loading = true;
         t.sendEmail();
       }
     }
@@ -126,8 +129,10 @@ $('a[href*="#"]')
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
+        //Sets the header perfecty on screen after auto scroll
+        var offset = 110;
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - offset
         }, 1000);
       }
     }

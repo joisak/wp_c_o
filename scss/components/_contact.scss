@@ -1,10 +1,46 @@
 .contact {
   background-color: $custom-cream-white;
+  .opening-hours{
+    font-family: $content-text;
+  }
   .warning {
     border: red solid 1px;
   }
   #map {
     height: 400px;
     width: 100%;
+  }
+  .map {
+    padding-left: 0;
+  }
+  input, textarea {
+    border: none;
+    color: $custom-black;
+  }
+  input:focus {
+    utline: none;
+    border: 1px solid $lighter-brown;
+    background-color: #fefefe;
+    box-shadow: 0 0 5px $light-brown;
+    transition: box-shadow 0.5s ease-in-out;
+  }
+  button {
+    padding:rem-calc(15) rem-calc(30);
+    background-color: $light-brown;
+    font-weight: bold;
+    transition: background-color ease-out .4s;
+    margin-top: rem-calc(23);
+    &.disabled {
+      background-color: $lighter-brown;
+      border: 1px solid $light-brown;
+      box-sizing: border-box;
+      padding: rem-calc(14) rem-calc(29);
+    }
+  }
+  button:hover {
+    background-color: $lighter-brown;
+    border: 1px solid $light-brown;
+    box-sizing: border-box;
+    padding: rem-calc(14) rem-calc(29);
   }
 }

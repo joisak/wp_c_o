@@ -1,5 +1,5 @@
 h1, h2, h3, h4 {
-  color:$custom-black;
+  color:$font-color;
   font-family: $header-font;
   font-weight: 600;
   letter-spacing: rem-calc(1);
@@ -9,4 +9,8 @@ h1, h2, h3, h4 {
 p {
   font-family: $content-text;
   margin-bottom: 0;
+  color: $font-color;
+  @include breakpoint(small down) {
+    font-size: rem-calc(14);
+  }
 }

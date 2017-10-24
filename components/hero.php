@@ -4,7 +4,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="columns small-12 medium-6 medium-offset-3 ">
+    <div class="columns small-10 small-offset-1 medium-6 medium-offset-3 ">
       <?php echo the_content(); ?>
     </div>
   </div>
