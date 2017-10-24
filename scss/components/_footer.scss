@@ -1,0 +1,10 @@
+.footer {
+  background-color: #fff;
+  .address {
+    font-weight: 600;
+    font-size: rem-calc(12);
+    span {
+      padding-right: rem-calc(8);
+    }
+  }
+}

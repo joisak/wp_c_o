@@ -1,9 +1,9 @@
 .course-menu {
   background-color: $custom-cream-white;
-  border-left: 5px solid #fff;
-  border-right: 5px solid #fff;
-  .menu-item {
-
+  .course,.price {
+    @include breakpoint(small down) {
+      font-size: rem-calc(14);
+    }
   }
   .menu-dots {
     background: url(../img/dots.svg);

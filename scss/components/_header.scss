@@ -1,5 +1,6 @@
 body {
   background-image: url('../img/bg.jpg');
+  background-color: black;
   background-size: contain;
   background-repeat:repeat;
   background-attachment: fixed;
@@ -7,11 +8,40 @@ body {
     background-size:cover;
   }
 }
+.main-bg {
+  background-color: $custom-cream-white;
+  margin-top: rem-calc(140);
+}
 .header {
   background-color: rgba(0,0,0, .5);
   width: 100%;
+  position: fixed;
+  z-index: 9999;
+  // animation: slideInFromTop .4s ease-out;
+  transition: all ease-out 0.2s ;
+  top:rem-calc(-100);
+  &.slide-in-menu {
+    top: rem-calc(0);
+  }
+  &.small {
+    height: rem-calc(60);
+    .header-logo {
+      padding-top: 10px;
+      img {
+        max-width: 50%;
+      }
+    }
+    .header-menu {
+      padding-top: rem-calc(10);
+      font-size: 24px;
+
+    }
+  }
   .header-logo {
     padding:rem-calc(20) rem-calc(20);
+    img {
+      transition: max-width ease .2s;
+    }
   }
   .header-menu {
     position: relative;
@@ -21,6 +51,7 @@ body {
     font-weight: 600;
     text-align: right;
     padding: rem-calc(20) rem-calc(20);
+    transition: all ease 0.4s;
     @include breakpoint(medium down) {
       font-size: rem-calc(28);
     }
@@ -43,5 +74,19 @@ body {
         }
       }
     }
+  }
+}
+
+.current {
+  text-decoration: underline;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }

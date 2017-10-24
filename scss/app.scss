@@ -62,6 +62,14 @@
        url('../fonts/Moon_flower.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/Moon_flower.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+@font-face {
+  font-family: 'IonIcons';
+  src: url('../fonts/ionicons.eot');
+  src: url('../fonts/ionicons.woff') format('woff'),
+       url('../fonts/iconicons.ttf') format('truetype'),
+       url('../fonts/iconicons.svg') format('svg');
+
+}
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 // Patterns and Components
@@ -77,4 +85,5 @@
         'components/gallery',
         'components/hero',
         'components/menu',
-        'components/header';
+        'components/header',
+        'components/footer';

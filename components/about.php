@@ -7,23 +7,39 @@
  ?>
 
 <div class="about">
+
   <div class="row">
-    <div class="small-12 text-center tp-60 bp-60"><h2>Styrsö</h2></div>
- </div>
-  <div class="row align-middle">
-    <div class="small-12 medium-6 columns lp-60 rp-20 about-text">
-      <?php echo $about_us; ?>
-    </div>
-    <div class="small-12 medium-6 columns">
-      <img class="first-img" src="<?php echo $about_img['url'];?>">
+    <div id="about" class="small-12 text-center tp-60 bp-60"><h2>Styrsö</h2></div>
+  </div>
+
+  <div class="small-12 medium-10 medium-offset-1">
+
+
+    <div class="row align-middle">
+
+        <div class="small-12 medium-6 column about-text">
+          <div class="small-12 medium-10 medium-offset-1">
+            <?php echo $about_us; ?>
+          </div>
+        </div>
+        <div class="small-12 medium-6  column about-img">
+          <img class="first-img" src="<?php echo $about_img['url'];?>">
+        </div>
+
     </div>
 
-    <div class="small-12 medium-6 medium-order-2 columns rp-60 lp-20 about-text">
-      <?php  echo $about_us_2; ?>
-    </div>
+    <div class="row align-middle">
 
-    <div class="small-12 medium-6 medium-order-1 columns">
-      <img class="second-img" src="<?php echo $about_img_2['url']; ?>">
+        <div class="small-12 medium-6 medium-order-2 column about-text">
+          <div class="small-12 medium-10 medium-offset-1">
+            <?php echo $about_us_2; ?>
+          </div>
+        </div>
+
+        <div class="small-12 medium-6 medium-order-1 column about-img">
+          <img class="second-img" src="<?php echo $about_img_2['url']; ?>">
+        </div>
+
     </div>
 
   </div>

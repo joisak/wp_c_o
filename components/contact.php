@@ -4,10 +4,12 @@
   $lng = $map['lng'];
  ?>
 
-<div class="contact">
+<div class="contact bp-60">
   <div class="row">
-    <div class="column small-12 text-center tp-60 bp-60 ">Kontakt</div>
-    <div class="small-12 medium-6 columns">
+    <div id="contact" class="column small-12 text-center tp-60 bp-60 "><h2>Kontakt</h2></div>
+  </div>
+  <div class="row small-12">
+    <div class="small-12 medium-6 column">
       <div class="form">
           <form  action="mailer.php"  method="post" v-bind:class="{fadeOut : success}">
             <input placeholder="Namn" type="text" name="name" v-model="form_fields.name" id="form_name" value="name" v-bind:class="{ 'warning' : attemptSubmit && missingName }" required>
@@ -25,7 +27,7 @@
           </form>
       </div>
     </div>
-    <div class="small-12 medium-6 columns">
+    <div class="small-12 medium-6 column">
       <div id="map"></div>
       <script>
         function initMap() {
@@ -44,6 +46,8 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjEOCtSLQsEKUk7XnQ3p6G8f5jI8baaRA&callback=initMap">
       </script>
     </div>
+  </div>
+
 
   </div>
 </div>

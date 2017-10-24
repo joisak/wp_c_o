@@ -4,7 +4,7 @@
 
 <div class="course-menu bp-60">
   <div class="row">
-    <div class="small-12 text-center tp-60 bp-20"><h2>Meny</h2></div>
+    <div id="menu" class="small-12 text-center tp-60 bp-20"><h2>Meny</h2></div>
   </div>
   <div class="column small-12">
   <?php foreach ($menu_items as $menu_item) : ?>
@@ -13,7 +13,7 @@
         <h3 class="tp-20 bp-10"><?php echo $menu_item['course_label']; ?></h3>
       <?php endif; ?>
         <div class="row">
-          <div class="column shrink"><?php echo $menu_item['course']; ?></div>
+          <div class="course column shrink"><?php echo $menu_item['course']; ?></div>
           <div class="menu-dots column"></div>
           <div class="price column shrink  text-right"><?php echo $menu_item['price']; ?></div>
         </div>

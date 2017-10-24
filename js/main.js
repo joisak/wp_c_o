@@ -2,6 +2,25 @@ var feed = new Instafeed({get: 'user', userId: '345510624', accessToken: '345510
 
 feed.run();
 
+
+
+var header = new Vue({
+  el: '.header',
+  data: {
+    show: false
+  },
+  mounted: function() {
+    var t = this;
+    setTimeout(function(){
+      t.show = true;
+      console.log('hej');
+    },800);
+  }
+});
+
+
+
+//Mail validation and send mail-data to mail.php
 var form = new Vue({
   el: '.form',
   data: {
@@ -76,3 +95,40 @@ var form = new Vue({
     }
   }
 });
+
+
+//Smooth menu
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // Adding current class
+    if($('.header-menu a').hasClass('current')) {
+      $('.header-menu a').removeClass('current');
+    }
+    $(this).addClass('current');
+
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      console.log(target);
+
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    }
+  });
