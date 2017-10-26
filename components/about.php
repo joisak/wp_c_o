@@ -9,14 +9,11 @@
 <div class="about">
 
   <div class="row">
-    <div id="about" class="small-12 text-center tp-60 bp-60"><h2>Styrsö</h2></div>
+    <div id="about" class="small-12 text-center tp-60 bp-40"><h2>Styrsö</h2></div>
   </div>
 
   <div class="small-12">
-
-
     <div class="row align-middle">
-
         <div class="small-12 medium-6 column about-text">
           <div class="small-12 medium-10 medium-offset-1">
             <?php echo $about_us; ?>
@@ -25,7 +22,6 @@
         <div class="small-12 medium-6  column about-img">
           <img class="first-img" src="<?php echo $about_img['url'];?>">
         </div>
-
     </div>
 
     <div class="row align-middle">

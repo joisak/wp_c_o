@@ -22,6 +22,4 @@
   </div>
 </div>
 <div class="row">
-
-
-  <div class="column small-12 main-bg bm-40">
+<div class="column small-12 main-bg bm-40">

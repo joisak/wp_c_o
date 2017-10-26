@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="6px" viewBox="0 0 5 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>dots</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dots" fill="#CAC4B5">
+            <path d="M0.112,2.856 C0.112,2.19466336 0.34133104,1.63466896 0.8,1.176 C1.25866896,0.71733104 1.81866336,0.488 2.48,0.488 C3.14133664,0.488 3.70666432,0.71733104 4.176,1.176 C4.64533568,1.63466896 4.88,2.19466336 4.88,2.856 C4.88,3.51733664 4.64533568,4.08266432 4.176,4.552 C3.70666432,5.02133568 3.14133664,5.256 2.48,5.256 C1.81866336,5.256 1.25866896,5.02133568 0.8,4.552 C0.34133104,4.08266432 0.112,3.51733664 0.112,2.856 Z" id="."></path>
+        </g>
+    </g>
+</svg>

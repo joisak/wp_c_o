@@ -1,12 +1,19 @@
 .course-menu {
   background-color: $custom-cream-white;
+  border: rem-calc(4) solid $light-brown;
+  padding-bottom: rem-calc(60);
+  margin-bottom: rem-calc(40);
+  @include breakpoint(medium down) {
+    border: rem-calc(0) solid $light-brown;
+    padding-bottom: rem-calc(0);
+  }
   .course,.price {
     @include breakpoint(small down) {
       font-size: rem-calc(14);
     }
   }
   .menu-dots {
-    background: url(../img/dots.svg);
+    background: url(../img/dots_.svg);
     background-repeat: repeat-x;
     background-position: 1px;
     background-size: 8px 2px;

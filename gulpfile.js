@@ -1,5 +1,8 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
+var uglify = require('gulp-uglify');
+var pump = require('pump');
+var concat = require('gulp-concat');
 
 var sassPaths = [
   'bower_components/normalize.scss/sass',
@@ -20,6 +23,16 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass'], function() {
+
+gulp.task('compress-js', function() {
+  gulp.src(['bower_components/jquery/dist/jquery.min.js', 'bower_components/vue/dist/vue.min.js', 'js/_*.js'])
+    .pipe(concat('all.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist/'))
+});
+
+
+gulp.task('default', ['sass', 'compress-js'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
+  gulp.watch('js/_*.js', ['compress-js']);
 });

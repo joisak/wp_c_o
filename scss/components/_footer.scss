@@ -1,10 +1,22 @@
 .footer {
-  background-color: #fff;
+  background-color: rgba(0,0,0,0.9);
+  h2 {
+    color: $custom-white;
+  }
   .address {
     font-weight: 600;
     font-size: rem-calc(12);
+    color: $custom-white;
+    @include breakpoint(small down) {
+      text-align: center;
+    }
     span {
       padding-right: rem-calc(8);
+    }
+  }
+  .share-icon {
+    @include breakpoint(small down) {
+      text-align: center;
     }
   }
 }

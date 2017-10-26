@@ -1,8 +1,14 @@
 .hero {
   background-color: $custom-cream-white;
-  @include breakpoint(small down) {
+  border: rem-calc(4) solid $light-brown;
+  padding-bottom: rem-calc(60);
+  margin-bottom: rem-calc(40);
+  @include breakpoint(medium down) {
+    border: rem-calc(0) solid $light-brown;
+    padding-bottom: rem-calc(0);
     p {
       text-align: center;
+      padding-bottom: rem-calc(20);
     }
   }
   .hero-img {
@@ -10,5 +16,8 @@
     height: 100%;
     display: block;
     padding: rem-calc(40) 0 rem-calc(0) 0;
+    @include breakpoint(small down) {
+      padding:rem-calc(15);
+    }
   }
 }

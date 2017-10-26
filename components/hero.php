@@ -1,6 +1,6 @@
 <div class="hero">
   <div class="row">
-    <div id="hero" class="columns medium-12 text-center tp-60 bp-20"><h1 class="uppercase"><?php echo the_title(); ?></h1>
+    <div id="hero" class="columns medium-12 text-center tp-60 bp-40"><h1 class="uppercase"><?php echo the_title(); ?></h1>
     </div>
   </div>
   <div class="row">

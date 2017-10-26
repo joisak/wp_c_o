@@ -8,21 +8,20 @@
     <div id="events" class="column small-12 text-center tp-60 bp-40"><h2>Events</h2></div>
   </div>
   <div class="row">
-    <div class="small-10 small-offset-1 medium-8 medium-offset-2">
-      <h3 class="text-center bp-30"><?php echo $event_heading ?></h3>
-      <span class="text-center"><?php echo $event_text; ?></span>
+    <div class="small-10 small-offset-1 medium-6 medium-offset-3 bp-40">
+      <h3 class="text-center bp-20"><?php echo $event_heading ?></h3>
+      <span class=""><?php echo $event_text; ?></span>
     </div>
   </div>
   <div class="row">
-    <div class="column small-10 small-offset-1 medium-10 medium-offset-1">
     <?php foreach ($events as $event) : ?>
-      <div class="small-12 medium-8 medium-offset-2 menu-item">
+      <div class="small-10 small-offset-1 medium-6 medium-offset-3 menu-item">
         <?php if($event['month']) :  ?>
-          <p class="tp-20 bp-10 month"><?php echo $event['month']; ?></p>
+          <h4 class="tp-20 bp-10 month"><?php echo $event['month']; ?></h4>
         <?php endif; ?>
           <div class="row event-line align-bottom">
-              <div class="event-name column "><?php echo $event['event_name']; ?></div>
-              <div class="event-date column text-right"><?php echo $event['event_date']; ?></div>
+              <div class="event-name p-text column "><?php echo $event['event_name']; ?></div>
+              <div class="event-date p-text column text-right"><?php echo $event['event_date']; ?></div>
           </div>
       </div>
     <?php endforeach; ?>

@@ -1,5 +1,12 @@
 .about {
   background-color: $custom-cream-white;
+  border: rem-calc(4) solid $light-brown;
+  padding-bottom: rem-calc(60);
+  margin-bottom: rem-calc(40);
+  @include breakpoint(medium down) {
+    border: rem-calc(0) solid $light-brown;
+    padding-bottom: rem-calc(0);
+  }
   .first-img {
     width: 115%;
     max-width: rem-calc(1200);
@@ -7,9 +14,13 @@
     padding: 0;
     @include breakpoint(medium down) {
       max-width: 100%;
+      padding: 0 0 rem-calc(30) 0;
     }
     @include breakpoint (small down) {
-      padding: rem-calc(10);
+      padding-top: rem-calc(30);
+      padding-bottom: rem-calc(30);
+      padding-left: rem-calc(15);
+      padding-right: rem-calc(15);
     }
   }
   .second-img {
@@ -22,13 +33,15 @@
       margin: 0;
     }
     @include breakpoint (small down) {
-      padding: rem-calc(10);
+      padding-top: rem-calc(30);
+      padding-bottom: rem-calc(30);
+      padding-left: rem-calc(15);
+      padding-right: rem-calc(15);
     }
   }
   .about-text {
     @include breakpoint(small down) {
-      text-align: center;
-      padding: rem-calc(30) !important;
+      padding: rem-calc(0) rem-calc(30) rem-calc(30) rem-calc(30) !important;
       margin: auto;
     }
   }

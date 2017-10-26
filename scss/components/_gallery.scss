@@ -1,5 +1,12 @@
 .gallery {
   background-color: #fff;
+  border: rem-calc(4) solid $light-brown;
+  padding-bottom: rem-calc(60);
+  margin-bottom: rem-calc(40);
+  @include breakpoint(medium down) {
+    border: rem-calc(0) solid $light-brown;
+    padding-bottom: rem-calc(0);
+  }
   .gallery-title {
     background-color: $custom-cream-white;;
   }
