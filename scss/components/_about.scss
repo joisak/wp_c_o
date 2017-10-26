@@ -14,21 +14,18 @@
     background-size: contain;
     max-width: 120%;
     max-height: 100%;
+    min-height: rem-calc(420);
     width: 115%;
     height: rem-calc(686);
     background-repeat: no-repeat;
     @include breakpoint(medium down) {
       max-width: 100%;
-      padding: 0 0 rem-calc(30) 0;
-      height: rem-calc(540);
+      margin: 0;
     }
     @include breakpoint (small down) {
-      padding-top: rem-calc(30);
-      padding-bottom: rem-calc(30);
-      margin-bottom: rem-calc(30);
-      height: rem-calc(420);
-      background-size: cover;
-      width: 100%;
+      padding-bottom: rem-calc(0);
+      height: rem-calc(460);
+      background-position: center;
     }
   }
   .second-img {
@@ -39,22 +36,22 @@
     background-repeat: no-repeat;
     width: 115%;
     height: rem-calc(686);
+    min-height: rem-calc(420);
     background-repeat: no-repeat;
     @include breakpoint(medium down) {
       max-width: 100%;
       margin: 0;
-      min-height: rem-calc(540);
     }
     @include breakpoint (small down) {
       padding-top: rem-calc(30);
       padding-bottom: rem-calc(30);
-      margin-bottom: rem-calc(30);
-      min-height: rem-calc(420);
+      height: rem-calc(460);
+      background-position: center;
     }
   }
   .about-text {
     @include breakpoint(small down) {
-      padding: rem-calc(0) rem-calc(30) rem-calc(30) rem-calc(30) !important;
+      padding: rem-calc(0) rem-calc(20) rem-calc(30) rem-calc(20) !important;
       margin: auto;
     }
   }

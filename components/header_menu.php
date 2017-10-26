@@ -3,7 +3,7 @@
       $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
       $image_url = $image[0];
 ?>
-<div class="header" v-bind:class="{ 'slide-in-menu': show }">
+<div class="header">
   <div class="row align-middle">
     <div class="columns header-logo small-12 medium-4">
       <img id="#hero" src="<? echo $image_url; ?>" alt="">

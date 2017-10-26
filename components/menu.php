@@ -10,7 +10,7 @@
   </div>
   <div class="column small-12">
   <?php foreach ($menu_items as $menu_item) : ?>
-    <div class="small-12 medium-6 medium-offset-3 menu-item">
+    <div class="small-12 medium-8 medium-offset-2 large-6 large-offset-3 menu-item">
       <?php if($menu_item['course_label']) :  ?>
         <h4 class="tp-20 bp-10"><?php echo $menu_item['course_label']; ?></h4>
       <?php endif; ?>

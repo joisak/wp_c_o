@@ -8,8 +8,10 @@
     padding-bottom: rem-calc(0);
   }
   .course,.price {
+    line-height: rem-calc(42);
     @include breakpoint(small down) {
       font-size: rem-calc(14);
+      line-height: rem-calc(34);
     }
   }
   .menu-dots {

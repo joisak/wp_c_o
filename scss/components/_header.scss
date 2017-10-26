@@ -1,6 +1,7 @@
 body {
-  background-image: url('../img/bg.jpg');
   background-color: black;
+  background-image: url('../img/bg.jpg');
+  animation: fadeIn .5s ease;
   background-size: contain;
   background-repeat:repeat;
   background-attachment: fixed;
@@ -23,11 +24,14 @@ body {
   width: 100%;
   position: fixed;
   z-index: 9999;
+  padding-top: rem-calc(50);
+  margin-top: rem-calc(-50);
   // transition: all ease-out 0.2s ;
   top:rem-calc(0);
   animation: slideInFromTop 1.2s ease;
   @include breakpoint(small down) {
-
+      top:0;
+      animation: fadeIn 1.2s ease;
   }
   // &.slide-in-menu {
   //   top: rem-calc(0);
@@ -94,6 +98,18 @@ body {
 
 .current {
   text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInFromTop {
