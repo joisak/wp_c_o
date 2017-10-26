@@ -8,35 +8,48 @@
     padding-bottom: rem-calc(0);
   }
   .first-img {
-    width: 115%;
     max-width: rem-calc(1200);
     direction: rtl;
     padding: 0;
+    background-size: contain;
+    max-width: 120%;
+    max-height: 100%;
+    width: 115%;
+    height: rem-calc(686);
+    background-repeat: no-repeat;
     @include breakpoint(medium down) {
       max-width: 100%;
       padding: 0 0 rem-calc(30) 0;
+      height: rem-calc(540);
     }
     @include breakpoint (small down) {
       padding-top: rem-calc(30);
       padding-bottom: rem-calc(30);
-      padding-left: rem-calc(15);
-      padding-right: rem-calc(15);
+      margin-bottom: rem-calc(30);
+      height: rem-calc(420);
+      background-size: cover;
+      width: 100%;
     }
   }
   .second-img {
-    width: 115%;
     max-width: rem-calc(1200);
     margin-left: -15%;
     padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 115%;
+    height: rem-calc(686);
+    background-repeat: no-repeat;
     @include breakpoint(medium down) {
       max-width: 100%;
       margin: 0;
+      min-height: rem-calc(540);
     }
     @include breakpoint (small down) {
       padding-top: rem-calc(30);
       padding-bottom: rem-calc(30);
-      padding-left: rem-calc(15);
-      padding-right: rem-calc(15);
+      margin-bottom: rem-calc(30);
+      min-height: rem-calc(420);
     }
   }
   .about-text {
