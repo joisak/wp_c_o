@@ -72,7 +72,7 @@ body {
     padding: rem-calc(20) rem-calc(20);
     transition: all ease 0.4s;
     @include breakpoint(medium down) {
-      font-size: rem-calc(28);
+      font-size: rem-calc(26);
     }
     @include breakpoint(small down) {
       text-align: center;
@@ -90,6 +90,10 @@ body {
         }
         a {
           color: $custom-white;
+          img {
+            width: rem-calc(28);
+            height: rem-calc(28);
+          }
         }
       }
     }

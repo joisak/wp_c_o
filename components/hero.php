@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="small-12">
+    <div class="small-12 medium-10 medium-offset-1">
       <div class="hero-img text-center">
         <?php the_post_thumbnail(); ?>
       </div>

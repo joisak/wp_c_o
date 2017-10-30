@@ -1,23 +1,23 @@
 .about {
   background-color: $custom-cream-white;
   border: rem-calc(4) solid $light-brown;
-  padding-bottom: rem-calc(60);
+  padding-bottom: rem-calc(80);
   margin-bottom: rem-calc(40);
   @include breakpoint(medium down) {
     border: rem-calc(0) solid $light-brown;
     padding-bottom: rem-calc(0);
   }
   .first-img {
-    max-width: rem-calc(1200);
     direction: rtl;
     padding: 0;
     background-size: contain;
-    max-width: 120%;
+    max-width: 100%;
     max-height: 100%;
     min-height: rem-calc(420);
-    width: 115%;
-    height: rem-calc(686);
+    width: 100%;
+    height: rem-calc(580);
     background-repeat: no-repeat;
+    background-position: left;
     @include breakpoint(medium down) {
       max-width: 100%;
       margin: 0;
@@ -29,14 +29,13 @@
     }
   }
   .second-img {
-    max-width: rem-calc(1200);
-    margin-left: -15%;
     padding: 0;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 115%;
-    height: rem-calc(686);
+    width: 100%;
+    height: rem-calc(580);
     min-height: rem-calc(420);
+    background-position: right;
     background-repeat: no-repeat;
     @include breakpoint(medium down) {
       max-width: 100%;

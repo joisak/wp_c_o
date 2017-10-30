@@ -15,8 +15,8 @@
         <li><a href="#events">Event</a></li>
         <li><a href="#about">Styrsö</a></li>
         <li><a href="#contact">Kontakt</a></li>
-        <li><a href="#instagram"><i class="ion-social-instagram"></i></a></li>
-        <li><a href="#facebook"><i class="ion-social-facebook"></i></a></li>
+        <li><a class="icon-instagram icon" href="#instagram"><img src="<?php echo get_template_directory_uri()?>/img/instagram.svg"></a></li>
+        <li><a class="icon-facebook icon" href="#facebook"><img src="<?php echo get_template_directory_uri()?>/img/facebook.svg"></a></li>
       </ul>
     </div>
   </div>

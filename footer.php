@@ -13,12 +13,14 @@
       <h2><?php echo get_bloginfo(); ?></h2>
     </div>
     <div class="small-12 medium-4 column text-right share-icon">
-      <!-- <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.obergska.se%2F&layout=button_count&size=small&mobile_iframe=true&appId=387998728074385&width=81&height=20" width="81" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
+      <div class="fb-share-button" data-href="http://www.obergska.se/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.obergska.se%2F&amp;src=sdkpreparse">Dela</a></div>
     </div>
 
 </div>
 <?php wp_footer(); ?>
 </body>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/instafeed.js" async></script>
-<script  type="text/javascript" src="<?php echo get_template_directory_uri() ?>/dist/all.js" async></script>
+<script  type="text/javascript" src="<?php echo get_template_directory_uri() ?>/dist/all.js" async defer></script>
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjEOCtSLQsEKUk7XnQ3p6G8f5jI8baaRA" async defer></script>
+<!-- end Google Maps -->
 </html>

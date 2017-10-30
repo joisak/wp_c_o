@@ -1,7 +1,7 @@
 .course-menu {
   background-color: $custom-cream-white;
   border: rem-calc(4) solid $light-brown;
-  padding-bottom: rem-calc(60);
+  padding-bottom: rem-calc(80);
   margin-bottom: rem-calc(40);
   @include breakpoint(medium down) {
     border: rem-calc(0) solid $light-brown;
@@ -21,5 +21,15 @@
     background-size: 8px 2px;
     position: relative;
     bottom: -5px;
+  }
+  .course {
+    @include breakpoint(small down) {
+      padding-right:0;
+    }
+  }
+  .price {
+    @include breakpoint(small down) {
+      padding-left:0;
+    }
   }
 }
