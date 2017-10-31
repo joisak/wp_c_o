@@ -27,6 +27,7 @@ body {
   padding-top: rem-calc(50);
   margin-top: rem-calc(-50);
   top:rem-calc(0);
+  transform: translateY(0);
   animation: slideInFromTop .8s ease-out;
   @include breakpoint(medium down) {
       top:0;
@@ -107,9 +108,9 @@ body {
 
 @keyframes slideInFromTop {
   0% {
-    top: rem-calc(-150);
+    transform: translateY(-120px);
   }
   100% {
-    top: rem-calc(0);
+    transform: translateY(0);
   }
 }

@@ -8,7 +8,7 @@ $('a[href*="#"]')
   .click(function(event) {
     // Adding current class
     if($('.header-menu').find('a').hasClass('current')) {
-      $('.header-menu').find('a').removeClass('current');
+      $('.current').removeClass('current');
     }
     $(this).addClass('current');
 
