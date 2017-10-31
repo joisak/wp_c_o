@@ -26,4 +26,7 @@
       </div>
     <?php endforeach; ?>
   </div>
+  <div class="column small-12">
+      <div class="text-center fb-page " data-href="https://www.facebook.com/pages/Caf%C3%A9-%C3%96bergska/204184162936752?fref=ts" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Caf%C3%A9-%C3%96bergska/204184162936752?fref=ts"><a href="https://www.facebook.com/pages/Caf%C3%A9-%C3%96bergska/204184162936752?fref=ts">Café Öbergska</a></blockquote></div></div>
+  </div>
 </div>

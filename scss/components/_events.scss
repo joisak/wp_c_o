@@ -29,4 +29,8 @@
       display: none;
     }
   }
+  .fb_iframe_widget {
+    display: block !important;
+    margin-top: rem-calc(60);
+  }
 }

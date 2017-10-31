@@ -5,18 +5,18 @@
 ?>
 <div class="header">
   <div class="row align-middle">
-    <div class="columns header-logo small-12 medium-4">
+    <div class="columns header-logo small-12 medium-12 large-4">
       <img id="#hero" src="<? echo $image_url; ?>" alt="">
     </div>
-    <div class="columns small-12 medium-8 header-menu">
+    <div class="columns small-12 medium-12 large-8 header-menu">
       <ul class="">
         <li><a href="#menu">Meny</a></li>
         <li><a href="#gallery">Galleri</a></li>
         <li><a href="#events">Event</a></li>
         <li><a href="#about">Styrsö</a></li>
         <li><a href="#contact">Kontakt</a></li>
-        <li><a class="icon-instagram icon" href="#instagram"><img src="<?php echo get_template_directory_uri()?>/img/instagram.svg"></a></li>
-        <li><a class="icon-facebook icon" href="#facebook"><img src="<?php echo get_template_directory_uri()?>/img/facebook.svg"></a></li>
+        <li><a class="icon-instagram icon" href="https://www.instagram.com/obergska/"><img src="<?php echo get_template_directory_uri()?>/img/instagram.svg"></a></li>
+        <li><a class="icon-facebook icon" href="https://www.facebook.com/cafeobergska/"><img src="<?php echo get_template_directory_uri()?>/img/facebook.svg"></a></li>
       </ul>
     </div>
   </div>

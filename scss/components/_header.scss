@@ -1,7 +1,7 @@
 body {
   background-color: black;
   background-image: url('../img/bg.jpg');
-  animation: fadeIn .5s ease;
+
   background-size: contain;
   background-repeat:repeat;
   background-attachment: fixed;
@@ -12,11 +12,11 @@ body {
 .main-bg {
   // background-color: $custom-cream-white;
   margin-top: rem-calc(140);
+  animation: fadeIn .5s ease;
   // border: rem-calc(4) solid $light-brown;
   @include breakpoint(medium down) {
     background-color: $custom-cream-white;
     border: rem-calc(4) solid $light-brown;
-
   }
 }
 .header {
@@ -26,33 +26,18 @@ body {
   z-index: 9999;
   padding-top: rem-calc(50);
   margin-top: rem-calc(-50);
-  // transition: all ease-out 0.2s ;
   top:rem-calc(0);
-  animation: slideInFromTop 1.2s ease;
-  @include breakpoint(small down) {
+  animation: slideInFromTop .8s ease-out;
+  @include breakpoint(medium down) {
       top:0;
       animation: fadeIn 1.2s ease;
   }
-  // &.slide-in-menu {
-  //   top: rem-calc(0);
-  // }
-  // &.small {
-  //   height: rem-calc(60);
-  //   .header-logo {
-  //     padding-top: 10px;
-  //     img {
-  //       max-width: 50%;
-  //     }
-  //   }
-  //   .header-menu {
-  //     padding-top: rem-calc(10);
-  //     font-size: 24px;
-  //
-  //   }
-  // }
+  @include breakpoint(small down) {
+      animation: fadeIn 1.2s ease;
+  }
   .header-logo {
     padding:rem-calc(20) rem-calc(20);
-    @include breakpoint(small down) {
+    @include breakpoint(medium down) {
       text-align: center;
     }
     img {
@@ -70,13 +55,13 @@ body {
     font-weight: 600;
     text-align: right;
     padding: rem-calc(20) rem-calc(20);
-    transition: all ease 0.4s;
+    transition: transform ease 0.4s;
     @include breakpoint(medium down) {
-      font-size: rem-calc(26);
+      font-size: rem-calc(24);
     }
-    @include breakpoint(small down) {
+    @include breakpoint(medium down) {
       text-align: center;
-      font-size: rem-calc(20);
+      font-size: rem-calc(24);
       padding-top: 0;
     }
     ul {
@@ -93,6 +78,10 @@ body {
           img {
             width: rem-calc(28);
             height: rem-calc(28);
+            @include breakpoint(small down) {
+              width:rem-calc(20);
+              height: rem-calc(20);
+            }
           }
         }
       }
@@ -118,10 +107,9 @@ body {
 
 @keyframes slideInFromTop {
   0% {
-    top:-140px;
+    top: rem-calc(-150);
   }
-
   100% {
-    top:0;
+    top: rem-calc(0);
   }
 }

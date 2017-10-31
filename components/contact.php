@@ -54,8 +54,7 @@
     <div class="small-12 medium-5 end column tp-60 small-order-1 medium-order-2">
       <h2 class="bp-60 text-center">Öppetider</h2>
       <div class="bp-40 opening-hours"><p><?php echo $opening_hours_text; ?></p></div>
-      <h2 class="bp-60 text-center">Väder</h2>
-      <!-- <div class="" id='wrapper-KKtf'><span id='h2-KKtf'><a id='url-KKtf' href="//www.vackertvader.se/styrsö">Vädret i Styrsö</a></span><div id='load-KKtf'></div><a id='url_detail-KKtf' href="//www.vackertvader.se/styrsö">Detaljerad väderprognos</a></div><script type="text/javascript" src="//widget.vackertvader.se/widgetv3/widget_request/2670996?bgcolor=ffffff&border=c4c3c3&days=5&key=-KKtf&lang=&maxtemp=no&size=x215&textcolor=363636&unit=C&wind=yes" charset="utf-8"></script> -->
+      <div id='wrapper-VEYY'><span id='h2-VEYY'><a id='url-VEYY' href="//www.vackertvader.se/göteborg-styrsö">Vädret i Styrsö</a></span><div id='load-VEYY'></div><a id='url_detail-VEYY' href="//www.vackertvader.se/göteborg-styrsö">Detaljerad väderprognos</a></div><script type="text/javascript" src="//widget.vackertvader.se/widgetv3/widget_request/2670995?bgcolor=ffffff&border=c4c3c3&days=3&key=-VEYY&lang=&maxtemp=no&size=x215&textcolor=363636&unit=C&wind=yes" charset="utf-8"></script>
     </div>
   </div>
   <div class="row">
